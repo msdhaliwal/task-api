@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "ਮਨਪ੍ਰੀਤ ਸਿੰਘ || Manpreet Singh <rdhaliwal97@outlook.com> (https://github.com/rdhaliwal97)",
