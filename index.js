@@ -1,10 +1,13 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
 let app = express();
 
 const PORT = process.env.PORT || 3000;
-const bodyParser = require('body-parser');
+
 //* parse application/json
 app.use(bodyParser.json());
+// note: routing
 app.use('/api', require('./api'));
 
 module.exports = app.listen(PORT, () => {

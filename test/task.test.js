@@ -1,7 +1,8 @@
-const { expect } = require('chai');
+const { expect } = require('chai'); 
+// expect, should  => BDD
+// assert => TDD
 const chai = require('chai');
-const chaiHttp = require('chai-http');
-const { response } = require('express');
+const chaiHttp = require('chai-http'); // supertest, 
 const server = require('../index');
 // note: assertions style
 chai.should();
@@ -17,7 +18,7 @@ describe('/api/task', () => {
 				.end((err, response) => {
 					response.should.have.status(200);
 					response.body.should.be.a('array');
-					response.body.length.should.be.eq(3);
+					response.body.length.should.be.equal(3);
 					done();
 				});
 		});

@@ -5,7 +5,7 @@ const TASKS = [
 	{ id: 2, name: 'Task 2', completed: false },
 	{ id: 3, name: 'Task 3', completed: false },
 ];
-router.route('/').get(getAllTask).post(addTask);
+router.route('/').get(getAllTask).post(addTask)
 router
 	.route('/:taskid')
 	.get(getTaskById)
@@ -16,6 +16,7 @@ module.exports = router;
 //* route handler functions
 //* GET all
 function getAllTask(req, res) {
+	//? internal processing
 	return res.status(200).json(TASKS);
 }
 //* GET by id
